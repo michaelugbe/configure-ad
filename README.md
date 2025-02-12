@@ -103,40 +103,35 @@ Log in ro client-1 as the original local admin and join it to the domain, then l
 
 ---
 
-### Step 11: Configure Helpdesk Agents in osTicket
+### Step 11: Log into the domain controller as the previously created amine (jane) and run powershell script to create 10000 users
 <p align="center">
-<img src="https://i.imgur.com/qmrv3eJ.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/97nvXuz.png" height="80%" width="80%"/>
 </p>
-Configure helpdesk agents in osTicket.
+Log into the domain controller as the previously created amine (jane) and run powershell script to create 10000 users.
 
 ---
 
-### Step 12: Configure SLA
+### Step 12: Configure account lockout threshold in group policy and attempt to login to script created account with the wrong credentials until locked out
 <p align="center">
-<img src="https://i.imgur.com/akG0TDZ.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/Clzb28q.png" height="80%" width="80%"/>
 </p>
-Configure Service Level Agreements (SLA).
+Configure account lockout threshold in group policy and attempt to login to script created account with the wrong credentials until locked out.
 
 ---
 
-### Step 13: Configure Help Topics
+### Step 13: Unlock the account used, reset the password and login using correct credentials
 <p align="center">
-<img src="https://i.imgur.com/1emlWpY.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/IAFDs8m.png" height="80%" width="80%"/>
 </p>
-Configure help topics.
+Unlock the account used, reset the password and login using correct credentials.
 
 ---
 
-### Step 14: Create Ticket as End-User
+### Step 14: Observe the logs on the Domain Controller
 <p align="center">
-<img src="https://i.imgur.com/MVSPCrh.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/8AiyZs0.png" height="80%" width="80%"/>
 </p>
-Create a ticket as an end-user.
+Observe the logs on the Domain Controller.
 
 ---
 
-### Step 15: Work Ticket to Completion as Helpdesk Agent
-<p align="center">
-<img src="https://i.imgur.com/c6fd56W.png" height="80%" width="80%"/>
-</p>
-Work ticket to completion as helpdesk agent.
