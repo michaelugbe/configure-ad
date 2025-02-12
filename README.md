@@ -31,35 +31,35 @@ create virtual network and subnet.
 
 ---
 
-### Step 2: Enable IIS in Windows
+### Step 2: Create domain controller VM
 <p align="center">
-<img src="https://i.imgur.com/1LrmW8v.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/LQyR5gC.png" height="80%" width="80%"/>
 </p>
-Enable IIS in Windows with CGI through the control Panel.
+Create domain controller VM
 
 ---
 
-### Step 3: Download osTicket Installation Files
+### Step 3: Create client VM
 <p align="center">
-<img src="https://i.imgur.com/oxXOoc6.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/jjeTLzp.png" height="80%" width="80%"/>
 </p>
-Download osTicket installation files.
+Create client VM.
 
 ---
 
-### Step 4: Setup SQL Database for osTicket
+### Step 4: Set domain controller's NIC private IP address to be static
 <p align="center">
-<img src="https://i.imgur.com/PSzjyI7.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/94LWEih.png" height="80%" width="80%"/>
 </p>
-Setup SQL database for osTicket.
+Set domain controller's NIC private IP address to be static.
 
 ---
 
-### Step 5: Install and Open osTicket Installer in Browser
+### Step 5: Set client-1's DNS settings to DC-1's private IP address
 <p align="center">
-<img src="https://i.imgur.com/ImOg625.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/Hd4ydiH.png" height="80%" width="80%"/>
 </p>
-Install and open osTicket Installer in browser.
+Set client-1's DNS settings to DC-1's private IP address.
 
 ---
 
