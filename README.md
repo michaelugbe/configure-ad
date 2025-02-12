@@ -63,43 +63,43 @@ Set client-1's DNS settings to DC-1's private IP address.
 
 ---
 
-### Step 6: Connect to osTicket Database using HeidiSQL
+### Step 6: Connect to the dc-1 VM via remote desktop
 <p align="center">
-<img src="https://i.imgur.com/62lWdEx.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/1pO99wk.png" height="80%" width="80%"/>
 </p>
-Connect to osTicket database using HeidiSQL.
+Connect to the dc-1 VM via remote desktop.
 
 ---
 
-### Step 7: Log in to osTicket Using Admin Credentials
+### Step 7: Install Active Directory Domain Services
 <p align="center">
-<img src="https://i.imgur.com/gcm0yCT.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/nt5FDYo.png" height="80%" width="80%"/>
 </p>
-Log in to osTicket using admin credentials.
+Install Active Directory Domain Services.
 
 ---
 
-### Step 8: Configure Roles (for Grouping Permissions)
+### Step 8: Create organizational units called _EMPLOYEES and _ADMINS
 <p align="center">
-<img src="https://i.imgur.com/ETGqWFe.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/2WIg6ei.png" height="80%" width="80%"/>
 </p>
-Configure roles (for grouping permissions).
+Create organizational units called _EMPLOYEES and _ADMINS.
 
 ---
 
-### Step 9: Configure Departments (for Ticket Visibility)
+### Step 9: Create a domain admin user within the domain
 <p align="center">
-<img src="https://i.imgur.com/YBvoed7.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/FjQ4FP0.png" height="80%" width="80%"/>
 </p>
-Configure departments (for ticket visibility).
+Create a domain admin user within the domain.
 
 ---
 
-### Step 10: Configure Teams (Pull Agents from Different Departments)
+### Step 10: Log in ro client-1 as the original local admin and join it to the domain, then login to the domain controller and verify that client-1 shows up in the ADUC
 <p align="center">
-<img src="https://i.imgur.com/TBWCy35.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/kIdvoB6.png" height="80%" width="80%"/>
 </p>
-Configure teams to pull agents from different departments.
+Log in ro client-1 as the original local admin and join it to the domain, then login to the domain controller and verify that client-1 shows up in the ADUC.
 
 ---
 
