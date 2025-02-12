@@ -2,55 +2,141 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+# Deploying Active Directory in Azure
+In this project I'll be creating two VMs, one running Windows Server, to act as a domain controller, and the other to act as a client running windows 10 that will be joined to the domain. I will then run AD and run a script that will create users in the domain, which I can log into from the cleint VM, then manage the accounts and update the group policies, all to simulate a real life IT environment. 
 
+---
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
-
-<h2>Environments and Technologies Used</h2>
-
+## Environments and Technologies Used
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Active Directory Domain Services
-- PowerShell
 
-<h2>Operating Systems Used </h2>
+---
 
-- Windows Server 2022
-- Windows 10 (21H2)
+## Operating Systems Used
+- Windows 10
+- Windows Server
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+---
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+## Lab Steps
 
-<h2>Deployment and Configuration Steps</h2>
+---
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+### Step 1: Create virtual network and subnet
+<p align="center">
+<img src="https://i.imgur.com/HNsT9H0.png" height="80%" width="80%"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+create virtual network and subnet.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+---
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+### Step 2: Enable IIS in Windows
+<p align="center">
+<img src="https://i.imgur.com/1LrmW8v.png" height="80%" width="80%"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Enable IIS in Windows with CGI through the control Panel.
+
+---
+
+### Step 3: Download osTicket Installation Files
+<p align="center">
+<img src="https://i.imgur.com/oxXOoc6.png" height="80%" width="80%"/>
 </p>
-<br />
+Download osTicket installation files.
+
+---
+
+### Step 4: Setup SQL Database for osTicket
+<p align="center">
+<img src="https://i.imgur.com/PSzjyI7.png" height="80%" width="80%"/>
+</p>
+Setup SQL database for osTicket.
+
+---
+
+### Step 5: Install and Open osTicket Installer in Browser
+<p align="center">
+<img src="https://i.imgur.com/ImOg625.png" height="80%" width="80%"/>
+</p>
+Install and open osTicket Installer in browser.
+
+---
+
+### Step 6: Connect to osTicket Database using HeidiSQL
+<p align="center">
+<img src="https://i.imgur.com/62lWdEx.png" height="80%" width="80%"/>
+</p>
+Connect to osTicket database using HeidiSQL.
+
+---
+
+### Step 7: Log in to osTicket Using Admin Credentials
+<p align="center">
+<img src="https://i.imgur.com/gcm0yCT.png" height="80%" width="80%"/>
+</p>
+Log in to osTicket using admin credentials.
+
+---
+
+### Step 8: Configure Roles (for Grouping Permissions)
+<p align="center">
+<img src="https://i.imgur.com/ETGqWFe.png" height="80%" width="80%"/>
+</p>
+Configure roles (for grouping permissions).
+
+---
+
+### Step 9: Configure Departments (for Ticket Visibility)
+<p align="center">
+<img src="https://i.imgur.com/YBvoed7.png" height="80%" width="80%"/>
+</p>
+Configure departments (for ticket visibility).
+
+---
+
+### Step 10: Configure Teams (Pull Agents from Different Departments)
+<p align="center">
+<img src="https://i.imgur.com/TBWCy35.png" height="80%" width="80%"/>
+</p>
+Configure teams to pull agents from different departments.
+
+---
+
+### Step 11: Configure Helpdesk Agents in osTicket
+<p align="center">
+<img src="https://i.imgur.com/qmrv3eJ.png" height="80%" width="80%"/>
+</p>
+Configure helpdesk agents in osTicket.
+
+---
+
+### Step 12: Configure SLA
+<p align="center">
+<img src="https://i.imgur.com/akG0TDZ.png" height="80%" width="80%"/>
+</p>
+Configure Service Level Agreements (SLA).
+
+---
+
+### Step 13: Configure Help Topics
+<p align="center">
+<img src="https://i.imgur.com/1emlWpY.png" height="80%" width="80%"/>
+</p>
+Configure help topics.
+
+---
+
+### Step 14: Create Ticket as End-User
+<p align="center">
+<img src="https://i.imgur.com/MVSPCrh.png" height="80%" width="80%"/>
+</p>
+Create a ticket as an end-user.
+
+---
+
+### Step 15: Work Ticket to Completion as Helpdesk Agent
+<p align="center">
+<img src="https://i.imgur.com/c6fd56W.png" height="80%" width="80%"/>
+</p>
+Work ticket to completion as helpdesk agent.
